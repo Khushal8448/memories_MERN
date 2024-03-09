@@ -19,7 +19,7 @@ const Input = ({ half, name, handleChange, type, label, handleShowPassword, auto
             endAdornment: (
               <InputAdornment position="end">
                 <IconButton onClick={handleShowPassword}>
-                  {name === "password" ? <Visibility /> : <VisibilityOff />}
+                  {type === "password" ? <Visibility /> : <VisibilityOff />}
                 </IconButton>
               </InputAdornment>
             ),
